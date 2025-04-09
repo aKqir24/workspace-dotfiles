@@ -789,6 +789,8 @@
         (proc-arg 9 "GimpParamDrawable" "GimpDrawable" "cyl-bottom-drawable" "_Bottom" "Cylinder bottom face (set this to NULL if not used)" 3 1)
         (proc-arg 6 "GParamDouble" "gdouble" "cylinder-radius" "Radi_us" "Cylinder radius" 3 0 1.7976931348623157e+308 0.25)
         (proc-arg 6 "GParamDouble" "gdouble" "cylinder-length" "Cylin_der length" "Cylinder length" 3 0 1.7976931348623157e+308 0.25)))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/mail/mail" 1742815417
+    (has-init))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/lighting/lighting" 1742815417
     (proc-def "plug-in-lighting" 1
          "Apply various lighting effects to an image"

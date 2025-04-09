@@ -42,14 +42,17 @@ bindsym $mod+Return exec kitty
 # kill focused window
 bindsym $mod+q kill
 
-# start menu
-bindsym $mod+r exec rofi -show drun
-
 # emoji selector
 bindsym $mod+dot exec rofi -show emoji
 
 # opened window
 bindsym $mod1+tab exec rofi -show window
+
+# start menu
+bindsym $mod+r exec sh ~/.config/rofi/launcher/launcher.sh
+
+# take a screenshoot
+bindsym Print exec import ~/Pictures/Screenshots/screenshot-$(date +"%Y-%m-%d_%H-%M-%S").png
 
 # open file manager
 bindsym Mod1+e exec pcmanfm
