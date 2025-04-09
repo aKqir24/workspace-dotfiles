@@ -1,0 +1,14 @@
+# GIMP gimp-paintbrush-tool options
+
+(paint-mode normal-legacy)
+(brush "2. Hardness 050")
+(dynamics "Pressure Size")
+(pattern "Starfield")
+(gradient "Skyline")
+(palette "Standard")
+(brush-size 52)
+(brush-angle 0.20000000000000001)
+(dynamics-enabled no)
+(use-smoothing yes)
+
+# end of gimp-paintbrush-tool options

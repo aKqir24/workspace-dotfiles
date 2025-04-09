@@ -1,0 +1,44 @@
+[window.padding]
+x=10
+y=8
+
+[cursor]
+style.shape = "Beam"
+style.blinking = "On"
+vi_mode_style = "Beam"
+
+[mouse]
+hide_when_typing = true
+
+[font]
+normal.family = "Hurmit Nerd Font"
+normal.style = "Regular"
+bold.family = "Hurmit Nerd Font Mono"
+bold.style = "Bold"
+italic.family = "Hurmit Nerd Font Propo"
+italic.style = "Italic"
+size = 12.4
+
+[colors.bright]
+black = "#26291A"
+blue = "#356CB5"
+cyan = "#A171D6"
+green = "#9AB9F2"
+magenta = "#D584E7"
+red = "#F6C8EF"
+white = "#DEEDFC"
+yellow = "#F6C8EF"
+
+[colors.normal]
+black = "#02050B"
+blue = "#185491"
+cyan = "#825CAD"
+green = "#6198E6"
+magenta = "#B973C9"
+red = "#FCAFE4"
+white = "#B5C6E5"
+yellow = "#EC94B1"
+
+[colors.primary]
+background = "#171826"
+foreground = "#DEEDFC"

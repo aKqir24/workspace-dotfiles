@@ -1,0 +1,44 @@
+[window.padding]
+x=10
+y=8
+
+[cursor]
+style.shape = "Beam"
+style.blinking = "On"
+vi_mode_style = "Beam"
+
+[mouse]
+hide_when_typing = true
+
+[font]
+normal.family = "Terminess Nerd Font Mono"
+normal.style = "Regular"
+bold.family = "Terminess Nerd Font Mono"
+bold.style = "Bold"
+italic.family = "Terminess Nerd Font Propo"
+italic.style = "Italic"
+size = 12.8
+
+[colors.bright]
+black = "#26291A"
+blue = "#347484"
+cyan = "#F93647"
+green = "#64BAB9"
+magenta = "#A22552"
+red = "#ED7C86"
+white = "#F7F1F6"
+yellow = "#FAAA79"
+
+[colors.normal]
+black = "#062630"
+blue = "#305468"
+cyan = "#D12F53"
+green = "#589EA3"
+magenta = "#913153"
+red = "#F53250"
+white = "#A5A29A"
+yellow = "#DB8E6E"
+
+[colors.primary]
+background = "#062630"
+foreground = "#F7F1F6"
