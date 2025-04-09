@@ -3,13 +3,13 @@ My second rice with arch linux, with a bright smooth contrasted yellow & teal co
 
 <br>
 
-__Distro:__ Arch
-__WM:__ i3wm + i3gaps
-__Status:__ polybar
-__Terminal:__ kitty
-__Launcher:__ rofi
-__Colorscheme:__ pywal
-__Wallaper:__ [This Gif](https://danbooru.donmai.us/posts/3939992) 
-__Font:__ DepartureMono NF(terminal/gtk) Terminess(status/qt)
+- __Distro:__ Arch
+- __WM:__ i3wm + i3gaps
+- __Status:__ polybar
+- __Terminal:__ kitty
+- __Launcher:__ rofi
+- __Colorscheme:__ pywal
+- __Wallaper:__ [This Gif](https://danbooru.donmai.us/posts/3939992) + paperview
+- __Font:__ DepartureMono NF(terminal/gtk) Terminess(status/qt)
 
 ![preview](https://github.com/user-attachments/assets/2b8dc420-41e2-4f92-a2f6-4c35cc446600)
