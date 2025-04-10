@@ -6,8 +6,8 @@ xrandr --addmode VGA1 "1152x864_60.00" ; xrandr --output VGA1 --mode "1152x864_6
 
 # Desktop, UI, Window Elements
 killall autotiling ; killall paperview ; 
-autotiling & paperview ~/Pictures/Wallpaper/Gif/\nature_girl 8 &
+paperview ~/Pictures/Wallpaper/Gif/\nature_girl 8 & autotiling &
 
-polybar-msg cmd quit ; killall -q polybar &
+sleep 3 ; polybar-msg cmd quit ; killall -q polybar &
 echo "---" | tee -a /tmp/polybar1.log /tmp/polybar2.log ;
 polybar bar1 2>&1 | tee -a /tmp/polybar1.log & disown &
