@@ -13,6 +13,6 @@ My second rice with arch linux, with a bright smooth contrasted yellow & teal co
 - __Font:__ DepartureMono NF[terminal/gtk] Terminess NF[status/qt]
 
 ## Preview
-| **DESKTOP VIEW**                                                                               | **DESKTOP VIEW**                                                                        |
-|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-|    ![preview](https://github.com/user-attachments/assets/2b8dc420-41e2-4f92-a2f6-4c35cc446600) | ![dek](https://github.com/user-attachments/assets/5fd33f4e-9f96-4893-8069-4a073d0d58b2) |
+| **WINDOW VIEW**                                                                               | **DESKTOP VIEW**                                                                            |
+|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+|    ![Window](https://github.com/user-attachments/assets/2b8dc420-41e2-4f92-a2f6-4c35cc446600) | ![desktop](https://github.com/user-attachments/assets/111e8b9d-bf50-4297-99f2-49896e341b9f) |
