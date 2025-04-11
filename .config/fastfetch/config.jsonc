@@ -1,7 +1,8 @@
 {
-    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",	
     "logo": {
 	"type": "small",
+	"color": {"2": "green", "1":"yellow"},
 	"padding": {
 		"right": 3,
 		"left": 3
@@ -10,7 +11,7 @@
     "display": {
         "separator": "  ",
         "color": {
-            "keys": "magenta"
+            "keys": "green"
         },
         "size": {
             "ndigits": 0,
@@ -24,9 +25,9 @@
         {
             "type": "title",
             "color": {
-                "user": "red",
-                "at": "cyan",
-                "host": "red"
+                "user": "green",
+                "at": "yellow",
+                "host": "green"
             }
         },
         "os",
