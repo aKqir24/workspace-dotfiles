@@ -18,10 +18,6 @@ exec_always xsetroot -cursor_name left_ptr
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-# Run Status Applets Like Nework Manager / Bluetooth
-exec --no-startup-id nm-applet
-exec --no-startup-id blueman-applet
-
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -43,7 +39,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+q kill
 
 # emoji selector
-bindsym $mod+dot exec rofi -show emoji
+bindsym $mod+period exec sh ~/.config/rofi/emoji/emoji.sh
 
 # opened window
 bindsym $mod1+tab exec rofi -show window

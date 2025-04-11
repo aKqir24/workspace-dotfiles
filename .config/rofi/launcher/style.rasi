@@ -11,19 +11,20 @@
 configuration {
     modi:                       "drun";
     show-icons:                 false;
-    display-drun:               "   Search";
+    display-drun:               " 󰀻 ";
     drun-display-format:        "{name}";
 }
 
 /*****----- Global Properties -----*****/
 * {
-    font: "DepartureMono Nerd Font 12";
-    background-alt:					   #9FD8A6;
-    background:			#393D44;
-    foreground:     	#E3ECEA;
-    selected:       	#9FD8A6;
-    active:         	#9FD8A6;
-    urgent:         	#9EA5A3;
+	icon-font:  "Symbols Nerd Font Mono 16";
+    text-font: "DepartureMono Nerd Font 13";
+    background-alt:					#9FD8A6;
+    background:						#393D44;
+    foreground:						#E3ECEA;
+    selected:						#9FD8A6;
+    active:							#9FD8A6;
+    urgent:							#9EA5A3;
 }
 
 * {
@@ -77,14 +78,15 @@ window {
 /*****----- Main Box -----*****/
 mainbox {
     enabled:                     true;
-    spacing:                     10px;
+    spacing:                     8px;
     margin:                      0px;
-    padding:                     6px;
+    padding:                     8px;
     border:                      2px solid;
     border-radius:               0px 0px 0px 0px;
     border-color:                @border-colour;
     background-color:            transparent;
     children:                    [ "inputbar", "listview" ];
+
 }
 
 /*****----- Inputbar -----*****/
@@ -92,7 +94,7 @@ inputbar {
     enabled:                     true;
     spacing:                     10px;
     margin:                      0px;
-    padding:                     12px 0px 8px 8px;
+    padding:                     10px 0px 6px 6px;
     border:                      0px;
     border-radius:               0px;
     border-color:                @border-colour;
@@ -103,7 +105,8 @@ inputbar {
 
 prompt {
     enabled:                     true;
-    background-color:            inherit;
+    font:						 @icon-font;
+	background-color:            inherit;
     text-color:                  inherit;
 }
 textbox-prompt-colon {
@@ -114,12 +117,13 @@ textbox-prompt-colon {
     text-color:                  inherit;
 }
 entry {
+	font:						 @text-font;
     enabled:                     true;
     background-color:            inherit;
     text-color:                  inherit;
     cursor:                      text;
-    placeholder:                 "";
-    placeholder-color:           inherit;
+    placeholder:                 " Search...";
+    placeholder-color:           @urgent;
 }
 
 /*****----- Listview -----*****/
@@ -132,7 +136,7 @@ listview {
     scrollbar:                   false;
     layout:                      vertical;
     reverse:                     false;
-    fixed-height:                true;
+    fixed-height:                false;
     fixed-columns:               true;
     
     spacing:                     0px;
@@ -214,6 +218,7 @@ element-text {
     cursor:                      inherit;
     vertical-align:              0.5;
     horizontal-align:            0.0;
+	font:						 @text-font;
 }
 
 /*****----- Mode Switcher -----*****/
