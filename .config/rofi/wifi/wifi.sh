@@ -1,3 +1,3 @@
 rofi \
 	-show wifi \
-	-modi "wifi:iwdrofimenu"
+	--combi-mode

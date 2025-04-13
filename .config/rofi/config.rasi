@@ -8,7 +8,7 @@
 
 configuration {
 	/*---------- General setting ----------*/
-	modi: "drun,run,filebrowser,window";
+	modi: "drun,run,filebrowser,window,wifi:iwdrofimenu";
 	case-sensitive: false;
 	cycle: true;
 	filter: "";

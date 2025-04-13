@@ -10,13 +10,13 @@
 /*****----- Configuration -----*****/
 configuration {
     show-icons:						false;
-    display-emoji:					" 󰞅 ";
+    display-emoji:					"  ";
     emoji-display-format:           "{name}";
 }
 
 /*****----- Global Properties -----*****/
 * {
-	icon-font:  "Symbols Nerd Font Mono 16";
+	icon-font:  "Siji 18";
     text-font: "DepartureMono Nerd Font 13";
 	emoji-font:		  "noto-fonts-emoji 16";
 	alert:							#A54242;
@@ -35,7 +35,7 @@ window {
     anchor:                      center;
     fullscreen:                  false;
     width:                       390px;
-	height:                      405px;
+	height:                      409px;
     x-offset:                    0px;
     y-offset:                    0px;
 
