@@ -14,7 +14,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font:  "DepartureMono Nerd Font 16";
+    font:					  "Siji 18";
 	alert:						#A54242;
 	selected:					#9FD8A6;
 	disabled:					#9EA5A3;
@@ -30,10 +30,10 @@ window {
     location:                    north;
     anchor:                      east;
     fullscreen:                  false;
-    width:                       193px;
-    height:                      50px;
-    x-offset:                    -380px;
-    y-offset:                    59px;
+    width:                       177px;
+    height:                      52px;
+    x-offset:                    -396px;
+    y-offset:                    62px;
 
     /* properties for all widgets */
     enabled:                     true;
@@ -43,16 +43,16 @@ window {
     border-radius:               0px;
     border-color:                @selected;
     cursor:                      "default";
-    background-color:            transparent;
+    background-color:            @background;
 }
 
 /*****----- Main Box -----*****/
 mainbox {
     enabled:                     true;
     spacing:                     15px;
-    margin:                      0px;
+    margin:                      2px;
     padding:                     4px;
-    border:                      0px solid;
+    border:                      2px solid;
     border-radius:               0px;
     border-color:                @selected;
     background-color:            @background;
@@ -103,7 +103,7 @@ element-text {
     cursor:                      inherit;
     vertical-align:              0.5;
     horizontal-align:            0.5;
-	padding:					 6px 4px 8px 11px;
+	padding:					 1px 1px 2px 6px;
 }
 element selected.normal {
     background-color:            var(selected);

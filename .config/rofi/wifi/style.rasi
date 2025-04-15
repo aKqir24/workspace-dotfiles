@@ -10,15 +10,15 @@
 /*****----- Configuration -----*****/
 configuration {
     show-icons:                    false;
-    display-wifi:                  "  ";
+    display-wifi:                  " ";
     wifi-display-format:        "{name}";
 }
 
 /*****----- Global Properties -----*****/
 * {
-	icon-font:  "Siji 18";
-    text-font: "DepartureMono Nerd Font 10";
-	search-text-font: "DepartureMono Nerd Font 12";
+	icon-font:					  "Siji 18";
+    text-font:		     "DepartureMono 10";
+	search-text-font:	 "DepartureMono 12";
     background-alt:					#9FD8A6;
     background:						#393D44;
     foreground:						#E3ECEA;
@@ -57,12 +57,12 @@ configuration {
 window {
     /* properties for window widget */
     transparency:                "real";
-    location:                    center;
-    anchor:                      center;
+    location:                    east;
+    anchor:                      north;
     fullscreen:                  false;
-    width:                       510px;
-    x-offset:                    0px;
-    y-offset:                    0px;
+    width:                       410px;
+    x-offset:                    -400px;
+    y-offset:                    -396px;
 
     /* properties for all widgets */
     enabled:                     true;
@@ -79,7 +79,7 @@ window {
 mainbox {
     enabled:                     true;
     spacing:                     8px;
-    margin:                      0px;
+    margin:                      2px;
     padding:                     8px;
     border:                      2px solid;
     border-radius:               0px 0px 0px 0px;
@@ -93,8 +93,8 @@ mainbox {
 inputbar {
     enabled:                     true;
     spacing:                     10px;
-    margin:                      0px;
-    padding:                     10px 0px 6px 6px;
+    margin:                      2px;
+    padding:                     4px 0px 2px 2px;
     border:                      0px;
     border-radius:               0px;
     border-color:                @border-colour;
@@ -210,6 +210,7 @@ element-icon {
     text-color:                  inherit;
     size:                        24px;
     cursor:                      inherit;
+
 }
 element-text {
     background-color:            transparent;

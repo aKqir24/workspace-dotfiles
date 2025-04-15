@@ -3,16 +3,16 @@
 <fontconfig>
     <match target="font">
         <edit name="antialias" mode="assign">
-            <bool>true</bool>
+            <bool>false</bool>
         </edit>
         <edit name="hinting" mode="assign">
-            <bool>true</bool>
+            <bool>false</bool>
         </edit>
         <edit name="hintstyle" mode="assign">
-            <const>hintfull</const>
+            <const>hintnone</const>
         </edit>
         <edit name="rgba" mode="assign">
-            <const>rgb</const>
+            <const>none</const>
         </edit>
         <edit name="autohint" mode="assign">
             <bool>false</bool>
@@ -21,7 +21,7 @@
             <const>lcdnone</const>
         </edit>
         <edit name="dpi" mode="assign">
-            <double>120</double>
+            <double>102</double>
         </edit>
     </match>
 </fontconfig>

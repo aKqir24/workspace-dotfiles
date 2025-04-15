@@ -13,10 +13,10 @@
 # CMDs
 uptime="`uptime -p | sed -e 's/up //g'`"
 # Options
-shutdown=' '
-reboot=' '
-suspend=' '
-logout=' '
+shutdown=' '
+reboot=' '
+suspend=' '
+logout=' '
 
 # Rofi CMD
 rofi_cmd() {
