@@ -7,14 +7,10 @@
  * Rofi Version: 1.7.3
  **/
 
-/*****----- Configuration -----*****/
-configuration {
-    show-icons:                 false;
-}
+@import							".dotfiles/.config/rofi/fonts.rasi"
 
 /*****----- Global Properties -----*****/
 * {
-    font:					  "Siji 18";
 	alert:						#A54242;
 	selected:					#9FD8A6;
 	disabled:					#9EA5A3;
@@ -27,13 +23,13 @@ configuration {
 window {
     /* properties for window widget */
     transparency:                "real";
-    location:                    north;
-    anchor:                      east;
+    location:                    west;
+    anchor:                      north;
     fullscreen:                  false;
-    width:                       177px;
-    height:                      52px;
-    x-offset:                    -396px;
-    y-offset:                    62px;
+    width:                       173px;
+    height:                      50px;
+    x-offset:                    92px;
+    y-offset:                    -396px;
 
     /* properties for all widgets */
     enabled:                     true;
@@ -97,13 +93,13 @@ element {
     
 }
 element-text {
-    font:                        @font;
+    font:                        @icon-font;
     background-color:            transparent;
     text-color:                  inherit;
     cursor:                      inherit;
     vertical-align:              0.5;
     horizontal-align:            0.5;
-	padding:					 1px 1px 2px 6px;
+	padding:					 4px 1px 4px 6px;
 }
 element selected.normal {
     background-color:            var(selected);

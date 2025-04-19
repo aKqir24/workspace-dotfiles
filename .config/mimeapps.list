@@ -17,6 +17,7 @@ application/x-font-pcf=gimp.desktop;com.github.FontManager.FontManager.desktop;c
 image/gif=viewnior.desktop;gimp.desktop;org.xfce.ristretto.desktop;
 image/bmp=org.xfce.ristretto.desktop;
 image/x-ilbm=gimp.desktop;viewnior.desktop;
+font/ttf=viewnior.desktop;
 
 [Default Applications]
 image/jpeg=viewnior.desktop

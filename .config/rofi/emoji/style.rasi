@@ -9,16 +9,14 @@
 
 /*****----- Configuration -----*****/
 configuration {
-    show-icons:						false;
     display-emoji:					"  ";
     emoji-display-format:           "{name}";
 }
 
+@import								".dotfiles/.config/rofi/fonts.rasi"
+
 /*****----- Global Properties -----*****/
-* {
-	icon-font:  "Siji 18";
-    text-font: "DepartureMono Nerd Font 13";
-	emoji-font:		  "noto-fonts-emoji 16";
+* {	
 	alert:							#A54242;
 	selected:						#9FD8A6;
 	disabled:						#9EA5A3;
@@ -35,7 +33,7 @@ window {
     anchor:                      center;
     fullscreen:                  false;
     width:                       390px;
-	height:                      409px;
+	height:                      400px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -86,12 +84,11 @@ prompt {
 textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
-    str:                         "::";
     background-color:            inherit;
     text-color:                  inherit;
 }
 entry {
-	font:						 @text-font;
+	font:						 @search-text-font;
     enabled:                     true;
     background-color:            inherit;
     text-color:                  inherit;

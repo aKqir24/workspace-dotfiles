@@ -12,13 +12,13 @@ configuration {
 	case-sensitive: false;
 	cycle: true;
 	filter: "";
-	scroll-method: 0;
+	scroll-method: 1;
 	normalize-match: true;
-	show-icons: true;
-	icon-theme: "Papirus";
+	show-icons: false;
+	icon-theme: "Pixelios";
 /*	cache-dir: ;*/
 	steal-focus: false;
-/*	dpi: -1;*/
+    dpi: 84;
 
 	/*---------- Matching setting ----------*/
 	matching: "normal";
@@ -80,6 +80,7 @@ configuration {
 	display-combi: "Combi";
 	display-keys: "Keys";
 	display-filebrowser: "Files";
+	display-passphrase: "dadad";
 
 	/*---------- Misc setting ----------*/
 	terminal: "rofi-sensible-terminal";

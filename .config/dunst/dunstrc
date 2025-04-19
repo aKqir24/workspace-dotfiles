@@ -1,0 +1,17 @@
+[global]
+	monitor = 0
+	gap_size = 2
+	offset = 16x50
+	frame_width = 2
+	alignment = left
+	width = (100, 300)
+	height = (30, 300)
+	icon_position = right
+	icon_theme = "Pixelitos"
+	font = "DepartureMono 8"
+	background = "#393D44"
+	foreground = "#E3ECEA"
+	frame_color = "#9FD8A6"
+	
+	progress_bar = false
+	enable_recursive_icon_lookup = true

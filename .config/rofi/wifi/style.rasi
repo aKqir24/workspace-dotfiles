@@ -9,16 +9,14 @@
 
 /*****----- Configuration -----*****/
 configuration {
-    show-icons:                    false;
     display-wifi:                  " ";
-    wifi-display-format:        "{name}";
+    wifi-display-format:        "{name}";   
 }
+
+@import								".dotfiles/.config/rofi/fonts.rasi"
 
 /*****----- Global Properties -----*****/
 * {
-	icon-font:					  "Siji 18";
-    text-font:		     "DepartureMono 10";
-	search-text-font:	 "DepartureMono 12";
     background-alt:					#9FD8A6;
     background:						#393D44;
     foreground:						#E3ECEA;
@@ -85,7 +83,7 @@ mainbox {
     border-radius:               0px 0px 0px 0px;
     border-color:                @border-colour;
     background-color:            transparent;
-    children:                    [ "inputbar", "listview" ];
+    children:                    [ "listview" ];
 
 }
 
@@ -93,7 +91,7 @@ mainbox {
 inputbar {
     enabled:                     true;
     spacing:                     10px;
-    margin:                      2px;
+    margin:                      0px;
     padding:                     4px 0px 2px 2px;
     border:                      0px;
     border-radius:               0px;
@@ -112,7 +110,6 @@ prompt {
 textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
-    str:                         "::";
     background-color:            inherit;
     text-color:                  inherit;
 }
@@ -122,7 +119,8 @@ entry {
     background-color:            inherit;
     text-color:                  inherit;
     cursor:                      text;
-    placeholder:                 " Search...";
+	padding:                     4px 0px 2px 2px;
+    placeholder:                 " Enter...";
     placeholder-color:           @urgent;
 }
 

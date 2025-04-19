@@ -16,10 +16,10 @@ configuration {
 }
 
 /*****----- Global Properties -----*****/
+@import					".dotfiles/.config/rofi/fonts.rasi"
+
+
 * {
-	icon-font:					  "Siji 18";
-    text-font:			 "DepartureMono 10";
-	search-text-font:	 "DepartureMono 12";
     background-alt:					#9FD8A6;
     background:						#393D44;
     foreground:						#E3ECEA;
@@ -59,11 +59,11 @@ window {
     /* properties for window widget */
     transparency:                "real";
     location:                    west;
-    anchor:                      south;
+    anchor:                      north;
     fullscreen:                  false;
     width:                       510px;
-    x-offset:                    258px;
-    y-offset:                    64px;
+    x-offset:                    260px;
+    y-offset:                    -396px;
 
     /* properties for all widgets */
     enabled:                     true;
@@ -113,7 +113,6 @@ prompt {
 textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
-    str:                         "|";
     background-color:            inherit;
     text-color:                  @background-alt;
 }
@@ -124,6 +123,7 @@ entry {
     background-color:            inherit;
     text-color:                  inherit;
     cursor:                      text;
+	padding:                     4px 0px 2px 2px;
     placeholder:                 " Search...";
     placeholder-color:           @urgent;
 }
@@ -137,7 +137,7 @@ listview {
     dynamic:                     true;
     scrollbar:                   false;
     layout:                      vertical;
-    reverse:                     false;
+    reverse:                     true;
     fixed-height:                true;
     fixed-columns:               true;
     

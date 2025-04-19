@@ -82,7 +82,7 @@ DefaultFVShowHmetrics:	0
 DefaultFVShowVmetrics:	0
 DefaultFVSize:	48
 DefaultFVRowCount:	11
-DefaultFVColCount:	11
+DefaultFVColCount:	23
 DefaultFVGlyphLabel:	0
 SaveToDir:	0
 OnlyCopyDisplayed:	0
@@ -156,4 +156,5 @@ CV_CB2Tool:	5
 XUID-Base:	1021 732 1153454481
 ShowKerningPane:	1
 PluginStartupMode:	Ask
+Recent:	/home/Akqir/.fonts/NerdFontsSymbolsOnly/SymbolsNerdFont-Regular.ttf
 Recent:	/home/Akqir/.fonts/Icomoon-Feather.ttf
