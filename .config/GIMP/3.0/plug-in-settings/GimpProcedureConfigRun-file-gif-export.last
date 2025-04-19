@@ -3,12 +3,12 @@
 (interlace no)
 (loop no)
 (number-of-repeats 256)
-(default-delay 300)
+(default-delay 600)
 (default-dispose "unspecified")
 (as-animation yes)
-(force-delay no)
+(force-delay yes)
 (force-dispose yes)
-(include-comment yes)
-(gimp-comment "")
+(include-comment no)
+(gimp-comment "Created with GIMP")
 
 # end of settings

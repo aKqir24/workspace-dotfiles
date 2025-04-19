@@ -3,14 +3,15 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias cat='bat'
+alias yay='paru'
 
 # Evironment Variables
 export COLORTERM=truecolor
 export TERM=xterm-256color
-export QT_QPA_PLATFORM=xcb
-export QT_QPA_PLATFORMTHEME=qt6ct
 
 # Color definitions
 RED="\[\e[1;31m\]"

@@ -167,13 +167,14 @@ mode "resize" {
 bindsym $mod+z mode "resize"
 
 # window gaps
-gaps inner 10
+gaps inner 0
 gaps inner 6
 smart_gaps on
 
 # title bars
-hide_edge_borders smart
-for_window [class=".*"] border pixel 3
+smart_borders no_gaps
+default_border pixel 2
+for_window [class="^.*"] border pixel 2
 for_window [class="Polybar"] floating enable
 
 # class                 border  backgr. text    indicator child_border
