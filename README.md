@@ -5,12 +5,13 @@ My second rice with arch linux, with a bright smooth contrasted yellow & teal co
 
 - __Distro:__ Arch
 - __WM:__ i3wm + i3gaps
+- __Compositor:__ picom
 - __Status:__ polybar
 - __Terminal:__ kitty
 - __Launcher:__ rofi
 - __Colorscheme:__ pywal
-- __Wallaper:__ [This Gif](https://danbooru.donmai.us/posts/3939992) + paperview
-- __Font:__ DepartureMono NF[terminal/gtk] Terminess NF[status/qt]
+- __Wallaper:__ [This Gif](https://danbooru.donmai.us/posts/3939992) + xgifwallpaper
+- __Font:__ DepartureMono[terminal/gtk] ProggyClean[status] siji-ttf[icons]
 - __Fetch:__ fastfetch
 
 ## Preview

@@ -12,6 +12,7 @@ alias yay='paru'
 # Evironment Variables
 export COLORTERM=truecolor
 export TERM=xterm-256color
+export QT_QPA_PLATFORM=xcb
 
 # Color definitions
 RED="\[\e[1;31m\]"
