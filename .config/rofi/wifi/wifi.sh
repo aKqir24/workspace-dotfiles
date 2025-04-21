@@ -3,7 +3,7 @@
 INTERFACE="wlan0"
 
 # Directory for temporary files related to iwd_rofi_menu
-TPATH="$HOME/temp/iwd_rofi_menu_files"
+TPATH="$HOME/.cache/iwd_rofi_menu_files"
 
 # Temporary files for storing network information
 RAW_NETWORK_FILE="$TPATH/iwd_rofi_menu_ssid_raw.txt"                    # Stores raw output of 'iwctl get-networks'
@@ -28,13 +28,13 @@ CLEAN_UP_LIST=(
 
 # Menu options for the Wi-Fi management interface
 MENU_OPTIONS=(
-    "󱛄  Refresh" \
-    "  Enable Wi-Fi" \
-    "󰖪  Disable Wi-Fi" \
-    "󱚾  Network Info" \
-    "󱚸  Scan Networks" \
-    "󱚽  Connect" \
-    "󱛅  Disconnect" \
+    "Refresh" \
+    "Enable Wi-Fi" \
+    "Disable Wi-Fi" \
+    "Network Info" \
+    "Scan Networks" \
+    "Connect" \
+    "Disconnect" \
 )
 
 # Arrays to store Wi-Fi information
@@ -49,19 +49,14 @@ function notify() {
 }
 
 # Function to power on the Wi-Fi interface
-function power_on() {
-    iwctl device "$INTERFACE" set-property Powered on
-    sleep 2
-}
-
-# Function to power off the Wi-Fi interface
-function power_off() {
-    iwctl device "$INTERFACE" set-property Powered off
+function power() {
+    iwctl device "$INTERFACE" set-property Powered $1
+	main
 }
 
 # Function to disconnect from the currently connected network
 function disconnect() {
-    notify "Disconnected!!" "You are now not connected to the network!!"
+    notify "Network Disconnected!!" "You are now disconnected to ${ssid[$1]}!!"
     iwctl station "$INTERFACE" disconnect
     main  # Call the main function to refresh the menu
 }
@@ -90,8 +85,7 @@ function check_wifi_status() {
 # It handles edge cases where SSID contains consecutive spaces.
 function helper_get_networks() {
     # Scan for networks using iwctl
-    iwctl station "$INTERFACE" scan
-    sleep 2
+    iwctl station "$INTERFACE" scan ; sleep 1
     iwctl station "$INTERFACE" get-networks > "$RAW_NETWORK_FILE"
 
     {
@@ -184,7 +178,7 @@ function connect_to_network() {
         # Attempt to connect to an unknown network with the provided passphrase
         local connection_output=$(iwctl station "$INTERFACE" connect "$selected_ssid" --passphrase=$(<"$TEMP_PASSWORD_FILE") 2>&1)
         if [[ -n "$connection_output" ]]; then
-            notify "Connection Was Unsuccessful" "The password entered may be wrong or empty, please try again!!"
+            notify "Connection Was Unsuccessful!!" "The password entered may be wrong or empty, please try again!!"
         else
             notify "Connection Was Successful!!" "You are now connected to $selected_ssid!!"
         fi
@@ -197,8 +191,7 @@ function helper_wifi_status() {
 
     {
         # Add options to return or refresh the menu
-        echo "󱚷  Return"
-        echo "󱛄  Refresh"
+        echo "󱚷  Return" ; echo "󱛄  Refresh"
 
         # Read the raw metadata file and process each line
         local i=1
@@ -247,7 +240,7 @@ function wifi_status() {
     # Use rofi to allow the user to select a metadata field
     local selected_index=$(
         echo -e "$data" | \
-        rofi -dmenu -mouse -i -p "Network Info:" \
+        rofi -dmenu -mouse -i \
             -theme  $THEME_FILE\
             -format i \
     )
@@ -269,14 +262,13 @@ function scan() {
     # Continue scanning if 'Rescan' option is selected
     local selected_wifi_index=1
     while (( selected_wifi_index == 1 )); do
-        notify-send "Scanning..." "For nearby available networks!!"
-        wifi=("󱚷  Return")
-        wifi+=("󱛇  Rescan")  # Add 'Rescan' option
+        notify-send "Scanning..." "For nearby networks!!"
+        wifi=("󱚷  Return") ; wifi+=("󱛇  Rescan")  # Add 'Rescan' option
 
         get_networks
         selected_wifi_index=$(
             printf "%s\n" "${wifi[@]}" | \
-            rofi -dmenu -mouse -i -p "SSID:" \
+            rofi -dmenu -mouse -i \
                 -theme $THEME_FILE \
                 -format i \
         )
@@ -308,7 +300,7 @@ function rofi_cmd() {
     fi
 
     local choice=$(echo -e "$options" | \
-                    rofi -dmenu -mouse -i -p "Wi-Fi Menu:" \
+                    rofi -dmenu -mouse -i \
                          -theme $THEME_FILE)
 
     echo "$choice"
@@ -318,30 +310,21 @@ function rofi_cmd() {
 function run_cmd() {
     case "$1" in
         "${MENU_OPTIONS[0]}")  # Refresh menu
-            sleep 2
-            main
-            ;;
+            main ;;
         "${MENU_OPTIONS[1]}")  # Turn on Wi-Fi
-            power_on
-            main
-            ;;
+            power on ;;
         "${MENU_OPTIONS[2]}")  # Turn off Wi-Fi
-            power_off
-            ;;
+            power off ;;
         "${MENU_OPTIONS[3]}")  # Show Wi-Fi status
             wifi_status
-            main
-            ;;
+            main ;;
         "${MENU_OPTIONS[4]}" | "${MENU_OPTIONS[5]}")  # List networks | Scan networks
             scan
-            main
-            ;;
+            main ;;
         "${MENU_OPTIONS[6]}")  # Disconnect
-            disconnect
-            ;;
+            disconnect ;;
         *)
-            return
-            ;;
+            return ;;
     esac
 }
 
@@ -361,8 +344,7 @@ function clean_up() {
 # Main function to start the script and display the menu
 function main() {
     local chosen_option=$(rofi_cmd)
-    run_cmd "$chosen_option"
-    clean_up
+    run_cmd "$chosen_option" ; clean_up
 }
 
 main
