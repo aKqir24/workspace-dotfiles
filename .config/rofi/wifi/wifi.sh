@@ -28,13 +28,9 @@ CLEAN_UP_LIST=(
 
 # Menu options for the Wi-Fi management interface
 MENU_OPTIONS=(
-    "Refresh" \
-    "Enable Wi-Fi" \
-    "Disable Wi-Fi" \
-    "Network Info" \
-    "Scan Networks" \
-    "Connect" \
-    "Disconnect" \
+    "Refresh" "Enable Wi-Fi" \
+    "Disable Wi-Fi" "Network Info" \
+    "Scan Networks" "Connect" "Disconnect" \
 )
 
 # Arrays to store Wi-Fi information
@@ -122,12 +118,9 @@ function helper_get_networks() {
     } > "$NETWORK_FILE"
 
     # Format signal strength and replace it with a visual representation of stars
-    sed -e 's/\*\*\*\*\[1;90m\[0m/[####] /g' \
-        -e 's/\*\*\*\[1;90m\*\[0m/[###-] /g' \
-        -e 's/\*\*\[1;90m\*\*\[0m/[##--] /g' \
-        -e 's/\*\[1;90m\*\*\*\[0m/[#---] /g' \
-        -e 's/\[1;90m\*\*\*\*\[0m/[----] /g' \
-        -e 's/\*\*\*\*/[####] /g' \
+    sed -e 's/\*\*\*\*\[1;90m\[0m/[####] /g' -e 's/\*\*\*\[1;90m\*\[0m/[###-] /g' \
+        -e 's/\*\*\[1;90m\*\*\[0m/[##--] /g' -e 's/\*\[1;90m\*\*\*\[0m/[#---] /g' \
+        -e 's/\[1;90m\*\*\*\*\[0m/[----] /g' -e 's/\*\*\*\*/[####] /g' \
         "$NETWORK_FILE" > "${NETWORK_FILE}.tmp" && mv "${NETWORK_FILE}.tmp" "$NETWORK_FILE"
 }
 
@@ -240,9 +233,7 @@ function wifi_status() {
     # Use rofi to allow the user to select a metadata field
     local selected_index=$(
         echo -e "$data" | \
-        rofi -dmenu -mouse -i \
-            -theme  $THEME_FILE\
-            -format i \
+        rofi -dmenu -mouse -i -theme  $THEME_FILE -format i
     )
 
     # Handle the selected index
@@ -268,9 +259,7 @@ function scan() {
         get_networks
         selected_wifi_index=$(
             printf "%s\n" "${wifi[@]}" | \
-            rofi -dmenu -mouse -i \
-                -theme $THEME_FILE \
-                -format i \
+            rofi -dmenu -mouse -i -theme $THEME_FILE -format i
         )
     done
 
