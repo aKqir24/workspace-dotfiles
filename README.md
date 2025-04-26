@@ -1,10 +1,10 @@
 # Workspace Rice
-My second rice with arch linux, with a bright smooth contrasted yellow & teal colors from the wallapaper.
+My third rice with artix linux, with a bright smooth contrasted yellow & teal colors from the wallapaper.
 
 <br>
 
-- __Distro:__ Arch
-- __WM:__ i3wm + i3gaps
+- __Distro:__ Artix
+- __WM:__ baspwm
 - __Compositor:__ picom
 - __Status:__ polybar
 - __Terminal:__ kitty
@@ -15,6 +15,6 @@ My second rice with arch linux, with a bright smooth contrasted yellow & teal co
 - __Fetch:__ fastfetch
 
 ## Preview
-| **WINDOW VIEW**                                                                               | **DESKTOP VIEW**                                                                            |
-|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-|    ![Window](https://github.com/user-attachments/assets/fa9d12a6-885a-4798-ad84-90853d5e5879) | ![desktop](https://github.com/user-attachments/assets/111e8b9d-bf50-4297-99f2-49896e341b9f) |
+| **WINDOW VIEW**                | **DESKTOP VIEW**                |
+|--------------------------------|---------------------------------|
+| ![window](preview/window.png)  | ![desktop](preview/desktop.png) |
