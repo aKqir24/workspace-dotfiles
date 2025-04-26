@@ -4,7 +4,7 @@ My third rice with artix linux, with a bright smooth contrasted yellow & teal co
 <br>
 
 - __Distro:__ Artix
-- __WM:__ baspwm
+- __WM:__ bspwm
 - __Compositor:__ picom
 - __Status:__ polybar
 - __Terminal:__ kitty
