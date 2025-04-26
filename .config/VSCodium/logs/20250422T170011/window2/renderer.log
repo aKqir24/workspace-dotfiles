@@ -1,0 +1,6 @@
+2025-04-22 20:49:23.703 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'terminalShellType' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-04-22 20:49:23.703 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-python-envs' wants API proposal 'terminalShellType' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-04-22 20:49:23.704 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'chatReadonlyPromptReference' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-04-22 20:49:24.001 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-04-22 20:49:24.292 [info] Started local extension host with pid 454000.
+2025-04-22 20:49:27.008 [info] [perf] Render performance baseline is 35ms

@@ -7,7 +7,6 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias cat='bat'
-alias yay='paru'
 
 # Evironment Variables
 export COLORTERM=truecolor

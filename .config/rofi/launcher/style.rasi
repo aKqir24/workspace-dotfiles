@@ -16,7 +16,7 @@ configuration {
 }
 
 /*****----- Global Properties -----*****/
-@import					".dotfiles/.config/rofi/fonts.rasi"
+@import					"./.config/rofi/fonts.rasi"
 
 
 * {

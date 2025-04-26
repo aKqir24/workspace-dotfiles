@@ -1,0 +1,8 @@
+2025-04-22 12:10:22.706 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'terminalShellType' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-04-22 12:10:22.729 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-python-envs' wants API proposal 'terminalShellType' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-04-22 12:10:22.730 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'chatReadonlyPromptReference' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-04-22 12:10:23.422 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-04-22 12:10:23.752 [info] Started local extension host with pid 3384.
+2025-04-22 12:10:23.772 [info] Started initializing default profile extensions in extensions installation folder. file:///home/Akqir/.vscode-oss/extensions
+2025-04-22 12:10:25.244 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/Akqir/.vscode-oss/extensions
+2025-04-22 12:10:27.333 [info] [perf] Render performance baseline is 33ms

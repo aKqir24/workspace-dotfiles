@@ -1,0 +1,4 @@
+2025-04-22 12:36:15.764 [info] Log level: Info
+2025-04-22 12:36:47.567 [info] Log level: Info
+2025-04-22 12:36:52.150 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
+2025-04-22 12:36:58.082 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_loadAssignableUsers] Failed to load assignable user(s) for aKqir24/OldTube-Tweaks: Error: No GitHub authentication session available.

@@ -1,0 +1,38 @@
+2025-04-22 12:36:15.747 [info] [main] Log level: Info
+2025-04-22 12:36:15.747 [info] [main] Validating found git in: "git"
+2025-04-22 12:36:15.747 [info] [main] Using git "2.49.0" from "git"
+2025-04-22 12:36:15.747 [info] [Model][doInitialScan] Initial repository scan started
+2025-04-22 12:36:15.747 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-04-22 12:36:51.743 [info] [main] Log level: Info
+2025-04-22 12:36:51.743 [info] [main] Validating found git in: "git"
+2025-04-22 12:36:51.743 [info] [main] Using git "2.49.0" from "git"
+2025-04-22 12:36:51.743 [info] [Model][doInitialScan] Initial repository scan started
+2025-04-22 12:36:51.803 [info] > git rev-parse --show-toplevel [78ms]
+2025-04-22 12:36:51.810 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2025-04-22 12:36:51.834 [info] [Model][openRepository] Opened repository: /home/Akqir/Documents/projects/OldTube-Tweaks
+2025-04-22 12:36:51.838 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-04-22 12:36:51.866 [info] > git config --get commit.template [20ms]
+2025-04-22 12:36:51.893 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [36ms]
+2025-04-22 12:36:51.909 [info] > git status -z -uall [8ms]
+2025-04-22 12:36:51.911 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-04-22 12:36:51.959 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [15ms]
+2025-04-22 12:36:51.968 [info] > git config --get --local branch.main.vscode-merge-base [3ms]
+2025-04-22 12:36:51.974 [info] > git config --get commit.template [16ms]
+2025-04-22 12:36:51.975 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [1ms]
+2025-04-22 12:36:52.107 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [12ms]
+2025-04-22 12:36:52.131 [info] > git status -z -uall [12ms]
+2025-04-22 12:36:52.134 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-04-22 12:36:52.363 [info] > git check-ignore -v -z --stdin [3ms]
+2025-04-22 12:36:53.610 [info] > git fetch [1777ms]
+2025-04-22 12:36:53.610 [info] From https://github.com/aKqir24/OldTube-Tweaks
+   1fd5e51..3a60f2e  main       -> origin/main
+2025-04-22 12:36:53.622 [info] > git config --get commit.template [6ms]
+2025-04-22 12:36:53.623 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-04-22 12:36:53.639 [info] > git status -z -uall [8ms]
+2025-04-22 12:36:53.641 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-04-22 12:36:54.695 [info] > git config --get commit.template [9ms]
+2025-04-22 12:36:54.697 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-04-22 12:36:54.710 [info] > git status -z -uall [6ms]
+2025-04-22 12:36:54.711 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-04-22 12:36:57.937 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [46ms]
+2025-04-22 12:40:09.191 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [16ms]

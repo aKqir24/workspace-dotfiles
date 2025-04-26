@@ -3,12 +3,7 @@
 ## Author : Aditya Shakya (adi1090x)
 ## Github : @adi1090x
 #
-## Rofi   : Power Menu
-#
-## Available Styles
-#
-## style-1   style-2   style-3   style-4   style-5
-## style-6   style-7   style-8   style-9   style-10
+
 
 # CMDs
 uptime="`uptime -p | sed -e 's/up //g'`"
@@ -42,10 +37,10 @@ run_cmd() {
 		# openbox --exit
 		
 		# bspwm
-		# bspc quit
+		bspc quit
 		
 		# i3wm
-		i3-msg exit
+		#i3-msg exit
 
 		# Plasma
 		#qdbus org.kde.ksmserver /KSMServer logout 0 0 0

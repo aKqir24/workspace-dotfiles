@@ -7,7 +7,7 @@
  * Rofi Version: 1.7.3
  **/
 
-@import							".dotfiles/.config/rofi/fonts.rasi"
+@import							"./.config/rofi/fonts.rasi"
 
 /*****----- Global Properties -----*****/
 * {

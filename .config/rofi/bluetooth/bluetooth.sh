@@ -17,29 +17,41 @@ do
   
   for i in $connected_device_mac
   do 
-    paired_device_list=$(echo "$paired_device_list" | sed -e "/$i/d") 
+     paired_device_list=$(bluetoothctl devices Paired | sed 's/Device //g' | sed 's/./   /18') 
   done
   
   if [[ -z $connected_device_list ]]; then
 	if [[ $device_list == "" ]]; then
 		final_device_list="$paired_device_list"
 	else
-		final_device_list="$paired_device_list\n$device_list"
+		if [[ $paired_device_list == "" ]]; then
+			final_device_list="$device_list"
+		else
+			final_device_list="$paired_device_list\n$device_list"
+		fi
 	fi
-	
   elif [[ -z paired_device_list ]]; then	
     final_device_list="$device_list"
   else
-	if [[ $device_list == "" ]]; then
-		final_device_list="$connected_device_list\n$paired_device_list"
+	if [[ $connected_device_mac == $paired_device_mac ]]; then
+		paired_device_list=""
 	else
-		final_device_list="$connected_device_list\n$paired_device_list\n$device_list"
+		paired_device_list=\n$paired_device_list
+	fi
+	if [[ $device_list == "" ]]; then
+		final_device_list="$connected_device_list$paired_device_list"	
+	else
+		final_device_list="$connected_device_list$paired_device_list\n$device_list"
 	fi
   fi
 
   connected=$(bluetoothctl show | grep 'PowerState')
   if [[ "$connected" =~ "PowerState: on" ]]; then
-    refresh_message="$BLUETOOTH_OFF Disable Bluetooth\n$REFRESH_ICON Refresh\n$final_device_list"
+	if [[ $final_device_list == "" ]]; then
+		refresh_message="$BLUETOOTH_OFF Disable Bluetooth\n$REFRESH_ICON Refresh" 
+	else
+		refresh_message="$BLUETOOTH_OFF Disable Bluetooth\n$REFRESH_ICON Refresh\n$final_device_list"
+	fi
   elif [[ "$connected" =~ "PowerState: off" ]]; then
     refresh_message="$BLUETOOTH_ON Enable Bluetooth"
   fi 
@@ -95,9 +107,9 @@ elif [[ -n $device_selected ]]; then
     bluetoothctl pairable off
   elif [[ "$device_action" =~ "Connect" ]]; then
     if bluetoothctl connect "$device_mac"; then
-        notify-send "Bluetooth Connection is..." "Successfull and now connected to ${device_selected:3}"
+        notify-send "Bluetooth Connection is..." "Successfull and now connected to ${device_selected:3}!!"
     else
-        notify-send "Bluetooth Connection is..." "Unsucessfull and was unable to connect to ${device_selected:3}"
+        notify-send "Bluetooth Connection is..." "Unsucessfull and was unable to connect to ${device_selected:3}!!"
     fi
   elif [[ "$device_action" =~ "Disconnect" ]]; then
     bluetoothctl disconnect "$device_mac" && notify-send "Disconnected from ${device_selected:3}"

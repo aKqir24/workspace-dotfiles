@@ -8,13 +8,8 @@
  **/
 
 /*****----- Configuration -----*****/
-configuration {
-    display-wifi:                  " ";
-    wifi-display-format:        "{name}";   
-}
-
-@import								".dotfiles/.config/rofi/fonts.rasi"
-@import								".dotfiles/.config/rofi/colors.rasi"
+@import								"./fonts.rasi"
+@import								"./colors.rasi"
 
 /*****----- Main Window -----*****/
 window {

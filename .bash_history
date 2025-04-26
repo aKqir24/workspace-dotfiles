@@ -1,108 +1,3 @@
-rofi -show wifi
-python -v
-python --h
-python --help
-python -V
-cd /usr/share/iwdrofimenu/
-ls
-nvim settings.py 
-sudo nvim settings.py 
-sudo nvim README.md 
-sudo nvim settings.py 
-sudo nvim iwdrofimenu.py 
-nvim view_pcf.sh
-sh view_pcf.sh
-sh view_pcf.sh
-sh view_pcf.sh
-exit
-paru -S siji-git
-siji
-siji-git
-siji-git view.sh
-echo -e '\uE204'
-fv-cache
-fc-cache -fv
-fc-list | grep siji
-echo -e '\uE203'
-fc-list | grep undefined
-echo -e '\uE204' | PangoViewer --font="Siji 14"
-echo -e '\uE203'
-paru -Rns siji-git
-git clone https://github.com/stark/siji.git
-sudo pacman -S xorg-xfd
-cd siji
-./install.sh
-./install.sh -d ~/.fonts
-./view.sh
-fc-cache -fv
-./install.sh -d ~/.fonts
-./view.sh
-xlsfonts | grep siji
--wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1
-xset +fp ~/.fonts
-xset fp rehash
-cd ..
-rm -r siji
-sudo rm -r siji
-polybar bar1
-sh view_pcf.sh
-sh view_pcf.sh
-nvim view_pcf.sh
-nvim view_pcf.sh
-sh view_pcf.sh
-kitty --override font_family=Siji &
-sh view_pcf.sh
-kitty --override font_family=Siji
-console
-kitty --override font_family=Siji
-nvim ~/.config/polybar/bluetooth/toggle-bluetooth.sh 
-nvim ~/.config/polybar/bluetooth/bluetooth.sh 
-nvim .config/polybar/config.ini 
-nvim .config/polybar/config.ini 
-nvim .config/polybar/config.ini
-nvim ~/.config/polybar/bluetooth/bluetooth.sh 
-nvim .config/polybar/config.ini
-exit
-git clone https://github.com/stark/siji
-cd siji
-./install.sh
-xset +fp ~/.fonts
-xset fp rehash
-xset +fp ~/.fonts
-sudo xset +fp ~/.fonts
-mkdir -p ~/.fonts/siji
-xset +fp ~/.fonts
-paru -S siji-git 
-paru -Rns siji-git 
-paru -Rns siji-ng
-paru -S siji-ng
-fc-list siji
-cd /usr/share/fonts/misc/
-ls
-pcmanfm 
-sudo pcmanfm 
-paru -S siji-git 
-paru -S siji-ng 
-polybar
-polybar
-polybar
-fc-cache -r
-polybar
-cd ~/.fonts
-git clone https://github.com/Anarky/Termsyn-Powerline.git
-sudo pacman -S xorg-fonts-misc
-sudo ln -s /etc/fonts/conf.avail/70-yes-bitmaps.conf /etc/fonts/conf.d/
-fc-cache -fv
-paru -S ttf-siji
-fc-cache -fv
-fc-list | grep -i siji
-sudo rm -r /usr/share/fonts/misc/siji.pcf
-sudo rm -r ~/.local/share/fonts/siji.pcf
-paru -S siji-ng 
-fc-list | grep -i siji
-sudo rm -r /usr/share/fonts/misc/siji.pcf
-fc-list | grep -i siji
-paru -S siji-ng 
 sudo pacman -Rns siji-ng
 sudo pacman -Rns siji-ttf
 sudo pacman -S siji-ttf
@@ -498,3 +393,108 @@ sh ~/.config/i3/start.sh
 xrandr
 pgrep -x xrandr
 btop
+thunar
+sudo pacman -Rns thunar 
+sudo pacman -Rns thunar thunar-volman
+mkdir ~/.mount
+sudo pacman -S polkit
+sudo pacman -Rns gvfs-mtp gvfs-gphoto2 gvfs-fc
+sudo pacman -Rns gvfs-mtp gvfs-gphoto2
+fastfetch 
+sudo pacman -Rns $(pacman -Qdtq)
+yay -S simple-mtpfs
+simple-mtpfs --device 1 ~/.mount
+pcmanfm
+simple-mtpfs --device 1 ~/.mount
+pcmanfm
+cd .files/
+stow .
+yay -S nwg-look autotiling
+yay -S nwg-look autotiling
+nvim ~/.bashrc 
+~/.config/i3/autotiling/main.py
+python3 ~/.config/i3/autotiling/main.py
+fc-cache -fv
+cd ~/.config/i3/
+~/.config/i3/autotiling/main.py
+../autotiling/main.py
+./autotiling/main.py
+python3 ./autotiling/main.py
+simple-mtpfs --device 1 ~/.mount
+simple-mtpfs --device 1 ~/.mount
+pcmanfm
+simple-mtpfs --device 1 ~/.mount
+yay -S nwg-look autotiling
+yay -S nwg-look autotiling
+yay -S nwg-look
+yay -S autotiling-git
+yay -S autotiling-git python-i3ipc
+sudo pacman -S python-i3ipc
+sudo pacman -S i3ipc-python-git
+yay -S i3ipc-python-git
+yay -S autotiling-git
+sudo pacman -Ss i3ipc
+fastfetch
+sudo pacman -Ss auto
+sudo pacman -Ss autot
+git clone https://github.com/nwg-piotr/autotiling.git
+git clone https://github.com/nwg-piotr/nwg-look.git
+sudo pacman -S xcur2png
+yay -S xcur2png
+cd nwg-look/
+make build
+yay -Ss picom
+yay -Ss picom
+yay -Ss picom
+yay -S picom-pijulius-next-git
+make build
+simple-mtpfs --device 1 ~/.mount
+fusermount -u .mount
+simple-mtpfs --device 1 ~/.mount
+simple-mtpfs --device 1 ~/.mount
+simple-mtpfs --device 1 ~/.mount
+fc-cache -fv
+sudo pacman -S xclip
+sudo pacman -S xclip
+yay -Ss emoji
+yay -S --noconfirm noto-fonts-emoji
+pcmanfm
+clear
+sudo pacman -S siji-ttf
+pacman -Ss siji
+yay -Ss siji
+yay -S siji-ttf
+yay -Ss rofi-emoji
+yay -S --noconfirm rofi-emoji-abi8
+nvim .files/install.sh 
+[200~/home/Akqir/.config/rofi/bluetooth/bluetooth.sh~
+xrandr --newmode "1152x864_60.00"   81.75  1152 1216 1336 1520  864 867 871 897 -hsync +vsync ;
+xrandr --addmode VGA1 "1152x864_60.00" ; xrandr --output VGA1 --mode "1152x864_60.00" &
+sudo pacman -S xorg-xrandr
+cd .files/
+stow .
+pkill i3
+nvim ~/.files/
+nvim ~/.files/
+nvim ~/.files/
+nvim ~/.files/.config/rofi/
+nvim ~/.files/.config/rofi/
+sudo pacman -S dkms
+sudo pacman -S linux-headers
+yay -S rtl8821cu-dkms-git
+lsusb
+sudo pacman -S usb-utils
+sudo pacman -S usb
+sudo pacman -Ss usb
+sudo pacman -Ss usbutil
+sudo pacman -Ss usbutils
+sudo pacman -Ss usbutils
+sudo pacman -S usbutils
+ls usb
+lsusb
+sudo mobprobe rtl8821cu
+dkms status
+sudo pacman -S linux-headers
+dkms status
+reboot
+sudo reboot

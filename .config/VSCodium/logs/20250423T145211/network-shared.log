@@ -1,0 +1,2 @@
+2025-04-23 14:52:30.209 [error] #1: https://raw.githubusercontent.com/EclipseFdn/publish-extensions/refs/heads/master/extension-control/extensions.json - error GET Request timeout after 10000ms
+2025-04-23 14:57:40.224 [error] #2: https://raw.githubusercontent.com/EclipseFdn/publish-extensions/refs/heads/master/extension-control/extensions.json - error GET Request timeout after 10000ms
