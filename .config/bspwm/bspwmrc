@@ -1,0 +1,34 @@
+#! /bin/sh
+
+# Resolution Display
+xrandr --newmode "1152x864_60.00"   81.75  1152 1216 1336 1520  864 867 871 897 -hsync +vsync ;
+xrandr --addmode VGA1 "1152x864_60.00" ; xrandr --output VGA1 --mode "1152x864_60.00" & 
+xsetroot -cursor_name left_ptr
+
+bspc monitor -d I II III IV V VI
+
+bspc config border_width         2
+bspc config window_gap           6
+
+bspc config focused_border_color	"#9FD8A6" 
+bspc config normal_border_color		"#9EA5A3"
+bspc config active_border_color 	"#D0E1A9"
+bspc config presel_feedback_color 	"#D6AA96"
+
+bspc config split_ratio          0.52
+bspc config single_monocle 		 true
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a Chromium desktop='^2'
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+
+# Start Audio
+pgrep -x pipewire || /usr/bin/pipewire &
+pgrep -x pipewire-pulse || /usr/bin/pipewire-pulse &
+pgrep -x wireplumber || /usr/bin/wireplumber &
+
+# Start / Restart Program
+gif_wallpaper=$HOME/Pictures/Wallpaper/Gif/nautr_girl.gif
+for kill in xgifwallpaper dust polybar picom ; do pgrep -x ${kill} && $(killall -q ${kill} &); done
+picom & sleep 0.6 ; xgifwallpaper -s FILL --scale-filter PIXEL -d 15 $gif_wallpaper & dunst & sxhkd & polybar & 

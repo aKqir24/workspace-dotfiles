@@ -1,0 +1,44 @@
+super + shift + r
+	bspc wm -r
+
+alt + F4 
+	bspc node -c
+
+super + Return
+	kitty
+
+super + e
+	pcmanfm
+
+# opens the powermenu widget
+super + shift + e
+	sh ~/.config/rofi/powermenu/powermenu.sh
+
+# take a screenshot using imagemagick
+super + Print
+	import ~/Pictures/Screenshots/screenshot-$(date +"%Y-%m-%d_%H-%M-%S").png
+
+# opens the rofi app launcher
+super + r
+	$(~/.config/rofi/launcher/launcher.sh)
+
+# opens the emoji selector rofi widget
+super + period
+	sh ~/.config/rofi/emoji/emoji.sh
+
+# toggle window mode between floating or tiled
+super + shift + space
+	sh ~/.config/sxhkd/toggle_window.sh --mode
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# resize the window by its sides
+super + alt + {Right,Down,Up,Left}
+	python3 ~/.config/sxhkd/window_toggle.py --resize {right,bottom,top,left} 20
+
+# toggle window focus/movements
+super + {_,shift + }{Right,Down,Up,Left}
+	pyton3 ~/.config/sxhkd/window_toggle.py {--focus, --move} {east, south, north, west} 20
+	
