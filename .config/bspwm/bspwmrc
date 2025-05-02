@@ -30,5 +30,5 @@ pgrep -x wireplumber || /usr/bin/wireplumber &
 
 # Start / Restart Program
 gif_wallpaper=$HOME/Pictures/Wallpaper/Gif/nautr_girl.gif
-for kill in xgifwallpaper dust polybar picom ; do pgrep -x ${kill} && $(killall -q ${kill} &); done
+for kill in sxhkd xgifwallpaper dust polybar picom ; do pgrep -x ${kill} && $(killall -q ${kill} &); done
 picom & sleep 0.6 ; xgifwallpaper -s FILL --scale-filter PIXEL -d 15 $gif_wallpaper & dunst & sxhkd & polybar & 

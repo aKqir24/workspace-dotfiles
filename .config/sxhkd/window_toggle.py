@@ -16,7 +16,7 @@ def run_command(command):
         print(f"Error running command: {e.output.decode()}")
         return None
 
-def win_prop(option):
+def win_prop():
     """Replicate the win_prop function to get window properties."""
     BSPC_WIN_INFO=run(["bspc query -T -n focused"], text=True, capture_output=True, shell=True)
     WIN_GEO=dict(loads(BSPC_WIN_INFO.stdout)).get("rectangle")
@@ -52,13 +52,12 @@ def handle_move(direction, value):
             run_command(f"bspc node -v -{value} 0")
     else:
         # Logic for tiled windows
-        width = win_prop("-width")
-        height = win_prop("-height")
+        x, y, width, height = win_prop()
         if width is not None and height is not None:
             if width <= height:
                 # Adjust based on the width/height ratio
                 if direction == "north":
-                    if win_prop("-x") < 15:
+                    if x < 15:
                         run_command("bspc node @parent --rotate 90")
                     else:
                         run_command("bspc node @parent --rotate 270")
@@ -69,12 +68,12 @@ def handle_move(direction, value):
             else:
                 # Adjust for wide windows
                 if direction == "east":
-                    if win_prop("-y") < 45:
+                    if y < 45:
                         run_command("bspc node @parent --rotate 90")
                     else:
                         run_command("bspc node @parent --rotate 270")
                 elif direction == "west":
-                    if win_prop("-y") < 45:
+                    if y < 45:
                         run_command("bspc node @parent --rotate 270")
                     else:
                         run_command("bspc node @parent --rotate 90")

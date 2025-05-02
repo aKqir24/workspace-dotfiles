@@ -28,7 +28,7 @@ super + period
 
 # toggle window mode between floating or tiled
 super + shift + space
-	sh ~/.config/sxhkd/toggle_window.sh --mode
+	python3 ~/.config/sxhkd/window_toggle.py --mode
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
@@ -40,5 +40,5 @@ super + alt + {Right,Down,Up,Left}
 
 # toggle window focus/movements
 super + {_,shift + }{Right,Down,Up,Left}
-	pyton3 ~/.config/sxhkd/window_toggle.py {--focus, --move} {east, south, north, west} 20
+	python3 ~/.config/sxhkd/window_toggle.py {--focus, --move} {east, south, north, west} 20
 	

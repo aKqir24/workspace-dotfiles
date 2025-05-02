@@ -1,44 +1,47 @@
-[window.padding]
-x=10
-y=8
+# Color scheme
+[colors.primary]
+background = "#393D44"
+foreground = "#E3ECEA"
 
+[colors.normal]
+black   = "#393D44"
+red     = "#D6AA96"
+green   = "#9FD8A6"
+yellow  = "#D0E1A9"
+blue    = "#94B0DC"
+magenta = "#A7D3E6"
+cyan    = "#A3E5FE"
+white   = "#E3ECEA"
+
+[colors.bright]
+black   = "#9EA5A3"
+red     = "#D6AA96"
+green   = "#9FD8A6"
+yellow  = "#D0E1A9"
+blue    = "#94B0DC"
+magenta = "#A7D3E6"
+cyan    = "#A3E5FE"
+white   = "#E3ECEA"
+
+# Font settings
+[font]
+normal.family = "DepartureMono"
+normal.style = "Regular"
+bold.family = "DepartureMono"
+bold.style = "Bold"
+italic.family = "DepartureMono"
+italic.style = "Italic"
+size = 12.0
+
+# Cursor settings
 [cursor]
 style.shape = "Beam"
 style.blinking = "On"
+blink_interval = 512 
 vi_mode_style = "Beam"
 
-[mouse]
-hide_when_typing = true
+# Window settings
+[window]
+dynamic_padding = false
+padding={ x = 10, y = 6 }
 
-[font]
-normal.family = "Hurmit Nerd Font"
-normal.style = "Regular"
-bold.family = "Hurmit Nerd Font Mono"
-bold.style = "Bold"
-italic.family = "Hurmit Nerd Font Propo"
-italic.style = "Italic"
-size = 12.4
-
-[colors.bright]
-black = "#26291A"
-blue = "#356CB5"
-cyan = "#A171D6"
-green = "#9AB9F2"
-magenta = "#D584E7"
-red = "#F6C8EF"
-white = "#DEEDFC"
-yellow = "#F6C8EF"
-
-[colors.normal]
-black = "#02050B"
-blue = "#185491"
-cyan = "#825CAD"
-green = "#6198E6"
-magenta = "#B973C9"
-red = "#FCAFE4"
-white = "#B5C6E5"
-yellow = "#EC94B1"
-
-[colors.primary]
-background = "#171826"
-foreground = "#DEEDFC"
