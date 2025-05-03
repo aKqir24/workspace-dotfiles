@@ -4,8 +4,9 @@
 [[ $- != *i* ]] && return
 
 # Aliases
-alias ls='ls --color=auto'
+alias fastfetch='sh ~/.config/fastfetch/logo.sh'
 alias grep='grep --color=auto'
+alias ls='ls --color=auto'
 alias cat='bat'
 
 # Evironment Variables
@@ -22,6 +23,9 @@ MAGENTA="\[\e[1;35m\]"
 CYAN="\[\e[1;36m\]"
 WHITE="\[\e[1;37m\]"
 RESET="\[\e[0m\]"
+
+# Run fastfetch for kitty
+sh $HOME/.config/fastfetch/logo.sh
 
 # All Prompts Config
 parse_git_branch() {

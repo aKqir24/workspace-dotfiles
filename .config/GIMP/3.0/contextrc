@@ -1,9 +1,8 @@
 # GIMP user context
 
-(tool "gimp-paintbrush-tool")
+(tool "gimp-crop-tool")
 (paint-info "gimp-paintbrush")
-(paint-mode normal-legacy)
-(brush "2. Hardness 050")
+(brush "2. Block 01")
 (dynamics "Pressure Size")
 (mybrush "100% Opaque")
 (pattern "Starfield")
